@@ -1,0 +1,23 @@
+{
+  "name": "swipeDownRefresh",
+  "version": "0.0.0",
+  "authors": [
+    "laispace <qingsheng.lai@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "https://github.com/madrobby/zepto.git#~1.1.6"
+  }
+}
