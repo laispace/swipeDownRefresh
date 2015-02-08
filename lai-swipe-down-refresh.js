@@ -76,8 +76,7 @@ Swipe.prototype = {
         if (state > -1) {
             var tips = self.options.swipeDownTips[state];
             self.$swipeTipsEl.text(tips).show();
-            var className = 'state-' + state;
-            self.$swipeTipsEl.addClass(className);
+            self.$swipeTipsEl.data('state', state);
         } else {
             self.$swipeTipsEl.text('').hide();
         }
@@ -127,12 +126,14 @@ Swipe.prototype = {
             self.swipeUp(distance);
 
             if (self.isShow) {
+                // TODO change state to 3
                 setTimeout(function () {
                     self.state = 3;
                     self.showTips();
                     // test
                     laiUtil.appendTestDiv(2);
                 }, 3000);
+                // TODO change state to 4
                 setTimeout(function () {
                     self.state = -1;
                     self.swipeUp(0);
