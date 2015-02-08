@@ -7,7 +7,7 @@ Swipe.prototype = {
     swipeTipsEl: '<div class="swipe-tips"></div>',
     _init: function (options) {
         this.options = options || {};
-        this.swipeDownDistance = this.options.swipeDownDistance ? this.options.swipeDownDistance : 300;
+        this.swipeDownDistance = this.options.swipeDownDistance ? this.options.swipeDownDistance : 100;
         this.swipeDownTipsDistance = this.options.swipeDownTipsDistance ? this.options.swipeDownTipsDistance : (this.swipeDownDistance/2);
         this.$el = this.options.el ? $(this.options.el) : $('body');
         this.$scrollEl = $.os.ios ? $(this.$el) : $(window);
