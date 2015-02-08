@@ -1,6 +1,5 @@
 .idea/
-bower_components/
-
+!bower_components/zepto/src/
 .DS_Store
 
 

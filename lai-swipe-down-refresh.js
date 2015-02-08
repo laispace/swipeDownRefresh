@@ -76,6 +76,8 @@ Swipe.prototype = {
         if (state > -1) {
             var tips = self.options.swipeDownTips[state];
             self.$swipeTipsEl.text(tips).show();
+            var className = 'state-' + state;
+            self.$swipeTipsEl.addClass(className);
         } else {
             self.$swipeTipsEl.text('').hide();
         }
